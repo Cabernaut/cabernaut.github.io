@@ -2,6 +2,32 @@
 <html>
     <head>
         <title>Cab's Kickass Website!</title>
+        <script>
+                function playBackgroundMusic() {
+                        var audio = new Audio('/home/cabernaut/cabernaut.github.io/Background Music.mp3')
+                        audio.loop = true;
+                        audio.play();
+                }
+
+                window.onload = function() {
+                        playBackgroundMusic();
+                };
+
+                function getFortune() {
+
+                        const fortunes = [
+                                "Just give up already."
+                                "Why are you here?"
+                                "You're such a failure."
+                                "Nobody asked for you to be here."
+                                "You're pathetic."
+                        ];
+
+                        const randomIndex = Math.floor(Math.random() * fortunes.length);
+
+                        alert(fortunes[randomIndex]);
+                }
+        </script>
 <style>
         body {
                 font-family:monospace;
