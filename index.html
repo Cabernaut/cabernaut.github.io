@@ -3,7 +3,12 @@
     <head>
         <title>Cab's Kickass Website!</title>
         <script>
+                function funnyScream() {
+                        var audio = new Audio('LightMode.mp3')
+                        audio.play();
+                }
                 function toggleLightMode() {
+                        funnyScream()
                         document.body.classList.toggle('light-mode');
 
                 }
